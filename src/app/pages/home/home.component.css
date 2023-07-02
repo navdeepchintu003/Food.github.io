@@ -1,0 +1,82 @@
+.banner{
+    background-image: url(../../../assets/img/newfood.img.jpg);
+    height: 510px;
+    background-size: cover ;
+    background-position: center top;
+}
+.content
+{
+    left: 20%;
+    top: 30%;
+    position: absolute;
+}
+.content h1{
+    color: orange;  
+    font-size: 60px;
+    font-weight: bold;    
+}
+.content a{
+    background-color: #fff;
+    color : var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+     
+}
+.content a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.stepBox{
+    background-color: skyblue;
+    padding:20px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.stepBox h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.stepBox p{
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+.highlight{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.foodbox{
+    padding: 20px 5px;
+}
+.foodbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: center;
+    /* cover */
+    border-radius: 5px;
+}
+.foodbox h1{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.viewbtn{
+    background-color: black;
+    padding:10px 10px ;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    color: green;
+    
+    
+}
+
+@media screen and (max-width:600px)
+{
+    .banner
+{
+    height: 700px;
+}
+}

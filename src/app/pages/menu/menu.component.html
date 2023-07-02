@@ -1,0 +1,17 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let fd of foodData">
+      <!-- mt-3 mb-3 are certain styles -->
+      <div class="foodbox mt-3 mb-3">
+        <img src="{{ fd.foodImg }}" />
+        <h1>{{ fd.foodName }}</h1>
+        <p>{{ fd.foodDetails }}</p>
+        <p>{{ fd.foodPrice | currency : "INR" }}</p>
+        <a class="viewbtn" [routerLink]="['/menu', fd.id]"
+          ><i class="bi bi-bag"></i>&nbsp;BuyMore</a
+        >
+        <!-- nbsp used for spaces -->
+      </div>
+    </div>
+  </div>
+</div>
